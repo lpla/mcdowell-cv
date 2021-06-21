@@ -23,7 +23,7 @@
 
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
-\def\mainfontface{Times New Roman}
+\def\mainfontface{TeX Gyre Termes}
 
 \DeclareOption{calibri}{%
   \def\mainfontface{Calibri}
@@ -32,10 +32,10 @@
 \ProcessOptions\relax
 
 % Set font size and paper type
-\LoadClass[letterpaper,\mainfontsize]{article} 
+\LoadClass[a4paper,\mainfontsize]{article} 
 
 % Set document margins
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+\usepackage[left=0.55in,top=0.6in,right=0.55in,bottom=0.6in]{geometry} 
 
 % Set font face
 \usepackage{fontspec}
@@ -70,7 +70,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \usepackage{ifthen}
 \usepackage{ifplatform}
 
-% For spcaed small caps
+% For spaced small caps
 \usepackage{microtype}
 
 \DeclareMicrotypeSet*{smallcapsi} { 
